@@ -1,5 +1,5 @@
 # usage: docker run arobass/xmrig -o miningpool.url:port -u username -p password -k -a algorithm --donate-level=0
-FROM alpine:3.10 AS build
+FROM alpine:3.12 AS build
 WORKDIR /xmrig
 RUN     echo http://dl-cdn.alpinelinux.org/alpine/edge/testing >> /etc/apk/repositories && \
 		apk --no-cache upgrade && \
